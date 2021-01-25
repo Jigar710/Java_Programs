@@ -1,0 +1,40 @@
+import java.util.*;
+//Selection sort of Array
+class demo
+{
+	public static void main(String aa[])
+	{
+		int a[];
+		int i,j,temp;
+		Scanner sc = new Scanner(System.in);
+		
+		a = new int[5];
+		
+		
+		//allocating values to array.
+		System.out.println("Enter Values ");
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = sc.nextInt();
+		}
+		
+		//sorting
+		for(i=0;i<a.length;i++)
+		{
+			for(j=i+1;j<a.length;j++)
+			{
+				if(a[i]>a[j])
+				{
+					temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+		
+		for(i=0;i<a.length;i++)	//display sorted array
+		{
+			System.out.println("a["+i+"]: "+a[i]+"\t");
+		}
+	}
+}

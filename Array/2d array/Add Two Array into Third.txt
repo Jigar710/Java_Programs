@@ -1,0 +1,39 @@
+//add two array and store in third
+class demo
+{
+	public static void main(String aa[])
+	{
+		int i, a[],b[],c[]; //declaration
+		a = new int[5];	//memory allocation and initialize each value with zero
+		b = new int[5];	//memory allocation and initialize each value with zero
+		c = new int[a.length]; //allocating same size as array a or b.
+		
+		//allocating values to both array a and b
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = i+10;
+			b[i] = i+20;
+		}
+		
+		for(i=a.length-1;i>=0;i--)
+		{
+			c[i] = a[i] + b[i]; //adding array a & b and storing in array c
+		}
+		
+		System.out.println("\nBefore Addition: ");
+		for(i=0;i<a.length;i++)	//display array a
+		{
+			System.out.print("a["+i+"]: "+a[i]+"\t");
+		}
+		for(i=0;i<b.length;i++)	//display array b
+		{
+			System.out.print("b["+i+"]: "+b[i]+"\t");
+		}
+		System.out.println();
+		System.out.println("After Addition: ");
+		for(i=0;i<c.length;i++)	//display array c
+		{
+			System.out.print("c["+i+"]: "+c[i]+"\t");
+		}
+	}	
+}

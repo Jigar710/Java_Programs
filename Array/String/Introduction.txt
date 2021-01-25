@@ -1,0 +1,14 @@
+JVM task when we compile the program
+	1 : it search for the .class files which we 
+		already used in the main function
+		in same folder
+	2 : if JVM is not able to get the .class files
+		then start searching for .java files with the
+		same name in same folder
+	3 : if JVM finds the .java file then JVM first 
+		compile those files and creates the .class files
+		in same folder.
+	4 : nw user can access those .class files
+-------------------------------------------------------------	
+if wants automatic compilations of the java files
+then we have to save file as a class name.

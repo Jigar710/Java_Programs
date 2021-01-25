@@ -1,0 +1,16 @@
+import java.util.*;
+class demo1
+{
+	public static void main(String ar[])
+	{
+		StringArray s1;
+		s1 = new StringArray();		
+		
+		s1.get();
+	
+		s1.sort1();
+		
+		System.out.println("\n\nOutput\n");
+		s1.disp();
+	}
+}

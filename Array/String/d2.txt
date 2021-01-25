@@ -1,0 +1,16 @@
+class demo1
+{
+	public static void main(String ar[])
+	{
+		StringArray s1,s2;
+		s1 = new StringArray();
+		s2 = new StringArray();
+		
+		s1.get();
+		s2.copy(s1);
+		
+		System.out.println("\n\nOutput\n");
+		
+		s2.disp();
+	}
+}

@@ -1,0 +1,41 @@
+pacakge : 
+	java.lang.Thread
+	java.lang.Runnable
+
+Threads in JAVA / MultiThreading 
+
+	use to execute more then one process paralley
+	
+How to create Thread
+	extends Thread
+	implements Runnable
+
+================================================================================================
+using Thread class
+	1)
+		define class
+	2)
+		extends Thread class
+	3)
+		override run() method
+	4)
+		write your logic in run() method
+	5)
+		create object your class
+	6)
+		call start() method using object
+================================================================================================
+Methods:
+	public void start()
+	public void run()
+	
+	public String getName()
+	public void setName(String)
+	
+	public int getPriority()
+	public void setPriority(int)
+	
+	public static Thread currentThread()
+================================================================================================
+
+	

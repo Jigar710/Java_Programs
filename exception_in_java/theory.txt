@@ -1,0 +1,20 @@
+try block : use to detect the exception
+finally block : always execute either there is an exception or not
+catch block : when try block detects the exceptions catch block will execute
+throw : use to throw exception
+throws : use to declare the exception
+================================================================================================
+try - catch
+try - finally
+try - catch - finally
+================================================================================================
+in the case of try - finally
+	execution seq
+		if no exception : try - finally
+		if exception : try - try - finally - catch (outer try catch is provided by JVM)
+================================================================================================
+in the case of try - catch - finally
+	execution seq
+		if no exception : try - finally
+		if  exception : try - catch - finally
+================================================================================================

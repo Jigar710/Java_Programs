@@ -1,0 +1,26 @@
+//copy one array into another
+class demo
+{
+	public static void main(String aa[])
+	{
+		int i, a[],b[]; //declaration
+		a = new int[5];	//memory allocation and initialize each value with zero
+		b = new int[a.length]; //allocating same size as array a.
+		
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = i+10;
+		}
+		
+		for(i=0;i<a.length;i++)
+		{
+			b[i] = a[i]; //copying each value
+		}
+		
+		System.out.println("Copied array: ");
+		for(i=0;i<a.length;i++)	//display
+		{
+			System.out.println("b["+i+"]: "+b[i]);
+		}
+	}	
+}

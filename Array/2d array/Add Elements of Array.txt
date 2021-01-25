@@ -1,0 +1,18 @@
+//addition of elements of array
+class demo
+{
+	public static void main(String aa[])
+	{
+		int i, a[], count=0; //declaration
+		a = new int[5];	//memory allocation and initialize each value with zero
+		
+		//allocating values to both array a adding each elements to count
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = i+10;
+			count = count + a[i];
+		}
+		
+		System.out.println("Addition of Elements: "+count);
+	}	
+}

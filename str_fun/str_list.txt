@@ -1,0 +1,7 @@
+int 		s1.length()
+boolean 	s1.isEmpty()
+char 		s1.charAt()
+boolean		s1.contains("")
+booelan		s1.equals(s2)
+booelan		s1.equalsIgnoreCase(s2)
+String		s1.concat(s2)

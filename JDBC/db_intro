@@ -1,0 +1,104 @@
+DB connectivity
+	Driver
+		use to map the data type
+			java data_type <==> db data_type
+========================================================================
+steps to connect java with DB
+1.	
+	load driver
+	Syntax:
+		public static Class<T> forName(String driver_name)throws ClassNotFoundException
+			method of "Class" class
+			to load the drive
+	Example :
+		String driver = "com.mysql.jdbc.Driver";
+		try{
+			Class.forName(driver);
+		}
+		catch(ClassNotFoundException ex)
+		{
+			ex.printStackTrace();
+		}
+**************************************************************************
+2.
+	create connection
+	Systax:
+		public static Connection getConnection(String conStr)throws SQLException
+		public static Connection getConnection(String conStr,Stirng user_name,String pass)throws SQLException
+			method of DriverManager class
+			use to create connection
+	Example :
+		String conStr = "jdbc:mysql://localhost:3306/db_name";
+		String user_name = "root";
+		String pass = "";
+		
+		Connection con;
+		try{
+			con = DriverManager.getConnection(conStr,user_name,pass);
+		}
+		catch(SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+********************************************************************************		
+3.
+	create Statement
+	Syntax:
+		public Statement createStatement()throws SQLException
+			method of Connection interface
+			use to create Statement object
+	Example:
+		Statement st;
+		try{
+			st = con.createStatement();
+		}
+		catch(SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+********************************************************************************		
+4.
+	create query
+	String q = "select * from emp";
+********************************************************************************		
+Note:
+type of queries
+	DDL : data definition lang
+		create/drop
+	DML : data manipulation lang
+		insert/delete/update
+	DQL : data query lang
+		select/search/count
+		
+	public boolean execute(String q)throw SQLException	  : for DDL
+	public int executeUpdate(String q)throw SQLException : for DML
+	public ResultSet executeQuery(String q)throw SQLException : for DQL
+	
+	methods of Statement interface 
+********************************************************************************		
+5.
+	execute query
+	Example:
+		ResultSet rs;
+		try{
+			rs = st.executeQuery(q);
+		}
+		catch(SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+****************************************************************************
+6.
+	work on result
+****************************************************************************
+7.
+	close connection
+	Example:
+		try{
+			con.close();
+		}
+		catch(SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+****************************************************************************

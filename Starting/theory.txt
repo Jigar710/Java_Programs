@@ -1,0 +1,42 @@
+platform ind : WORA
+pure oops
+camel notation
+dynamic memory allocation
+	
+	data type
+		primitive / in-built
+			for memory allocation : assign a value
+		non-primitive
+			for memory allocation : new operator is used
+=================================================================================================
+primitive / in-built
+	boolean		(0 byte) : 1 bit
+	char		(2 byte)
+	Integeral
+		byte	(1 byte)
+		short	(2 byte)
+		int		(4 byte)
+		long	(8 byte)
+	FloatingPoint
+		float	(4 byte)
+		double	(8 byte)
+		
+non-primitive
+	array
+	user-defined
+		class
+	enum
+=================================================================================================
+byte
+	1 byte : 8 bits
+	left most bit : sign bit
+	for data : 7 bits
+	range : -(2^7) to (2^7) - 1
+	range : -128 to 127
+short
+	2 bytes = 16 bits
+	left most bit : sign bit
+	for data : 15 bits
+	range : -(2^15) to (2^15) - 1
+	range : -32768 to 32767
+=================================================================================================

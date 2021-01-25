@@ -1,0 +1,11 @@
+class demo1
+{
+	public static void main(String ar[])
+	{
+		StringArray s1;
+		s1 = new StringArray();
+		s1.get();
+		System.out.println("\n\nOutput\n");
+		s1.disp();
+	}
+}

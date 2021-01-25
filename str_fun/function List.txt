@@ -1,0 +1,15 @@
+1	length()
+2	equals()
+3 	contains()
+4 	charAt()
+5	equalsIgnoreCase()
+6	concat()
+7 	subString()
+8	toUppercase()
+8	toLowercase()
+
+HelloHiiByee
+
+8 	subString(int i)    - i to end   
+7 	subString(int i,int e)
+

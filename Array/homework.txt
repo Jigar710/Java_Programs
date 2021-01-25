@@ -1,0 +1,6 @@
+minimum from matrix
+search in matrix
+Row wise - print
+column - wise print
+upper tringle matrix ? 
+lower tringle matrix ? 

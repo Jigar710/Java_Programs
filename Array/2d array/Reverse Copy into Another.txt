@@ -1,0 +1,27 @@
+//reverse copy one array into another
+class demo
+{
+	public static void main(String aa[])
+	{
+		int i, a[],b[]; //declaration
+		a = new int[5];	//memory allocation and initialize each value with zero
+		b = new int[a.length]; //allocating same size as array a.
+		
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = i+10;
+		}	//array is ready to copy
+		
+		for(i=a.length-1;i>=0;i--)
+		{
+			b[(a.length-1)-i] = a[i]; //copying each value in reverse
+			//last index=4 so (a.length-1) ex:  1st round - b[4-4] = a[4]; 2nd round - b[4-3]=a[3];
+		}
+		
+		System.out.println("Copied array in reverse: ");
+		for(i=0;i<a.length;i++)	//display
+		{
+			System.out.println("b["+i+"]: "+b[i]);
+		}
+	}	
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+//Linear search of Array
+class demo
+{
+	public static void main(String aa[])
+	{
+		Scanner sc;
+		sc = new Scanner(System.in);
+		int a[],n,f=0,i;
+		a = new int[5];
+		
+		//allocating values to array.
+		System.out.println("Enter Values ");
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = sc.nextInt();
+		}
+		
+		System.out.println("Enter element to find: ");
+		n = sc.nextInt(); //Element of which I want to find
+		
+		for(i=0;i<a.length;i++)
+		{
+			if(a[i] == n)
+			{
+				f=1;
+				System.out.println("Found");
+				break;
+			}
+		}
+		
+		if(f == 0)
+		{
+			System.out.println("Not Found");
+		}
+	}
+}

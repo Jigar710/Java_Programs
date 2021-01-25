@@ -1,0 +1,21 @@
+int a[];
+a=new int[5];
+
+String s[];
+s=new String[5];
+
+for(int i = 0; i<s.length ;i++)
+	SOP(s[i]);
+	
+String Array : get & display
+String Array : get & reverse display
+String Array : get & copy 
+String Array : get & disiplay with length 
+	Aman    : 4
+	Keval   : 5
+	Nidhi   : 5
+String Array : get two array and merge into third
+String Array : get array & convert Every String in UpperCase
+String Array : get array & convert Every String in LowerCase
+String Array : get array & display string which contins any voowel
+

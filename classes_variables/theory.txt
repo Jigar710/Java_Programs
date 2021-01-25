@@ -1,0 +1,69 @@
+class
+	user define data type
+	data members + member functions
+	
+	data members
+		static data members / class variables
+		non-static data members / instance variables
+	member functions
+		static member functions
+		non-static member functions
+=====================================================================================
+non-static data members
+	instance variables
+	class demo
+	{
+		int a;	
+	}
+	demo d1,d2,d3;
+	d1 = new demo();
+	d2 = new demo();
+	d3 = new demo();
+
+static data member	
+	class variables
+	class demo
+	{
+		static int a;	
+	}
+	demo d1,d2,d3;
+	d1 = new demo();
+	d2 = new demo();
+	d3 = new demo();
+==========================================================================================
+access (data members)
+	inside class (non-static member function)
+		non-static data members
+			directly can access
+		static data members
+			directly can access
+	inside class (static member function)
+		non-static data members
+			can not access non-static members fron static context
+		static data members
+			directly can access
+	outside class (depends on visibility mode)
+		non-static data members
+			using object
+		static data members
+			using object or using class_name
+==========================================================================================
+access (methods / member function)
+
+	outside class (depends on visibility mode)
+		non-static methods
+			using object
+		static methods
+			using object or using class_name
+==============================================================================================
+					static				non-static 
+			
+static				yes						no
+methods
+
+non-static			yes						yes
+methods
+==============================================================================================
+can we declare cons as static?
+
+			

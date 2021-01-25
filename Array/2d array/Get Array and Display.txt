@@ -1,0 +1,18 @@
+//get and display array in reverse
+class demo
+{
+	public static void main(String aa[])
+	{
+		int i, a[]; //declaration
+		a = new int[5];	//memory allocation and initialize each value with zero
+		
+		for(i=0;i<a.length;i++)
+		{
+			a[i] = i+1;	//setting value
+		}
+		for(i=a.length-1;i>=0;i--)	//starting loop from last index value upto 0 to dispolay in reverse
+		{
+			System.out.println("a["+i+"]: "+a[i]);
+		}
+	}	
+}

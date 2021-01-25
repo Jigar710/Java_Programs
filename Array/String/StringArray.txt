@@ -1,0 +1,92 @@
+import java.util.*;
+class StringArray
+{
+	String a[] = new String[5];
+	void get()
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the data");
+		for(int i=0;i<a.length;i++)
+		{
+			a[i] =sc.next();
+		}
+	}
+	void disp()
+	{
+		for(String t : a)
+		{
+			System.out.println(t);
+		}		
+	}
+	
+	void copy(StringArray t)
+	{
+		for(int i=0;i<a.length;i++)
+		{
+			a[i] = t.a[i];
+		}
+	}
+	boolean search(String name)
+	{
+		boolean b = false;
+		for(int i=0;i<a.length;i++)
+		{
+			b = a[i].equals(name);
+			if(b == true)
+			{
+				return b;
+			}
+		}
+		return b;
+	}
+	int count(String name)
+	{
+		int count=0;
+		for(int i=0;i<a.length;i++)
+		{
+			int n = a[i].compareTo(name);
+			if(n==0)
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	void sort()
+	{
+		String t = "";
+		for(int i=0;i<a.length-1;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				int n = a[i].compareTo(a[j]);
+				if(n>0)
+				{
+					t = a[i];
+					a[i] = a[j];
+					a[j] = t;
+				}
+			}
+		}		
+	}
+	void sort1()
+	{
+		String t = "";
+		for(int i=0;i<a.length-1;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				String temp1 = a[i].toUpperCase();
+				String temp2 = a[j].toUpperCase();
+				int n = temp1.compareTo(temp2);
+				if(n>0)
+				{
+					t = a[i];
+					a[i] = a[j];
+					a[j] = t;
+				}
+			}
+		}		
+	}
+}

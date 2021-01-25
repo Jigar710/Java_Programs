@@ -1,0 +1,149 @@
+data type
+	primitive / in-built
+		boolean(1 bit)
+		char(2)
+		byte(1)
+		short(2)
+		int(4)
+		long(8)
+		float(4) 
+		double(8)
+		
+	non - primitive
+================================================================================================	
+Operator
+1.	Arithmetic operator (binary operator)
+	(can not apply with boolan type of variables)
+		+,-,*,/,%
+			if applied on 
+				byte
+				short
+				int
+			ans is always int
+		/: division
+			int / int = int
+			int / float = float
+			float / int= float
+			float / float = float
+		+ : 
+			char + char : int
+			char + int : int
+			char - int : int
+			char * int : int
+			char / int : int
+			char % int : int
+============================================================================================		
+			
+2. Relational Operator	(binary operator)
+	>,<,<=,>=,==,!=
+	
+	always returns boolan type of value : either true or false
+	can apply relational opearator on
+		integeral and floating ,char		
+		with boolean type of data only ==, != is allowed to apply
+============================================================================================		
+in java
+	simple if
+	if else
+	else if ladder
+	nested if
+	
+	for
+	while
+	do_while
+	works on boolean type of data
+============================================================================================		
+3. Logical Operator	
+	AND : &&	(binary)
+	OR  : ||	(binary)
+	NOT : !		(unary)
+	
+	AND : if both the op are true then returns true otherwise false
+			
+			x && y 
+			a>b && a>c	
+	OR  : if either of the op are true then returns true otherwise false
+			
+			x || y 
+			a>b || a>c
+			
+	NOT : ! : unary opearator
+		: if op is true than returns false otherwise true
+============================================================================================		
+4. Assignment operator [ = ] [RTL : right to left]
+	a = 5
+	a = b = c = 5
+	
+	
+	a = a + 5 ==> a += 5
+	a = a - 5 ==> a -= 5
+	a = a * 5 ==> a *= 5
+	a = a / 5 ==> a /= 5
+	a = a % 5 ==> a %= 5
+	
+		
+	a = 5
+	b = 3
+	
+	a = a * b + 10
+	a *= b + 10 ==> a = a * (b+10)
+===============================================================================================	
+5.
+	Increment / Decrement Operator (Unary Operator)
+	++        / --
+	
+	Prefix : ++a
+	Postfix : a++
+===============================================================================================	
+6.
+	conditional operator // ternary operator
+	syntax : 	exp1 ? exp2 : exp3
+===============================================================================================	
+7.
+	Bitwise operator
+		converts the data in binary and then perform task.
+		
+	AND	(&)
+	OR	(|)
+	negation	(~)
+	Ex-OR (^)
+	shift left (<<)
+	shift right (>>)
+	shift right with zero fill (>>>)
+	
+	
+	AND (&)
+	
+	1 & 1 = 1
+	1 & 0 = 0
+	0 & 1 = 0
+	0 & 0 = 0
+	
+	OR (|)
+	
+	1 | 1 = 1
+	1 | 0 = 1
+	0 | 1 = 1
+	0 | 0 = 0
+	
+	Ex-OR (^)
+	
+	1 ^ 1 = 0
+	1 ^ 0 = 1
+	0 ^ 1 = 1
+	0 ^ 0 = 0
+	
+	negation / 1's complement (UNARY)	
+	~a : 1 ==> 0 , 0 ==> 1
+	
+	shift left (<<) : binary operator
+	syntax
+		b = a << (num % 32);
+	
+	a = 4
+
+	b = a << 2
+
+	a : 0000 0100
+	b : 0001 0000  :16
+============================================================================	

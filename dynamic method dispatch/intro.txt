@@ -1,0 +1,11 @@
+/*
+dynamic method dispatch : 
+	to access the members of sub class using object of super class
+	required steps:
+		inheritance
+		method overriding
+		ref of super 
+		allocate memory of sub
+		access the overridden method
+*/
+

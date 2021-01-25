@@ -1,0 +1,83 @@
+type conversion in java
+(I)	primitive to primitive
+			(i)		narrowing
+			(ii)	widening
+==========================================================		
+(i)		widening : automatic type conversion
+		implicit type conversion
+	byte a = 10;
+	int b = a;
+
+	byte ==> short ==> int ==> long ==> double
+						   ==> float ==> double
+
+(ii)	narrowing : type casting				
+	for this type of conversion we have to provide the
+	desination data type.
+	int b = 100;
+	byte a = (byte)b;
+	
+	
+	byte <== short <== int <== long <== double
+						   <== float <== double
+				
+NOTE : 
+	to apply the arithmetic operations on 
+			byte
+			short			
+			int
+	always we get the answer in int format
+	
+	so if want to store the ans into byte or short
+	of the arithmetic operations then 
+	we have to apply the narrowing rules
+	means type casting syntax.
+--------------------------------------------------------------
+
+
+(II)	primitive to non-primitive/Wrapper
+			is called "boxing"
+			constructors are used
+	
+		Boolean(boolean)
+		Boolean(String) throws java.lang.NumberFormatException
+		
+		Character(char)
+		
+		Byte(byte)
+		Byte(String) throws java.lang.NumberFormatException
+		
+		Short(short)
+		Short(String) throws java.lang.NumberFormatException
+		
+		Integer(int)	//we can pass int,byte,short value
+		Integer(String) throws java.lang.NumberFormatException
+			
+		Long(long)	//we can pass int,byte,short,long value
+		Long(String) throws java.lang.NumberFormatException
+		
+		Float(float)	//we can pass int,byte,short value
+		Float(double)
+		Float(String) throws java.lang.NumberFormatException
+			
+		Double(double) //we can pass int,byte,short,long,float,double value
+		Double(String) throws java.lang.NumberFormatException
+-----------------------------------------------------------			
+(III)	non-primitive/Wrapper to primitive
+
+			is called unboxing
+			convertion methods are used
+	
+			boolean booleanValue();
+			char charValue(); 
+			byte byteValue()
+			short shortValue()
+			int intValue()
+			long longValue()
+			float floatValue()
+			double doubleValue()
+--------------------------------------------------------------------
+auto boxing 
+	: no need to use the constructors for the boxing
+auto unboxing
+	: no need to use the conversion method for the unboxing

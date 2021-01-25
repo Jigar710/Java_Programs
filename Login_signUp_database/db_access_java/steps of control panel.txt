@@ -1,0 +1,13 @@
+steps to connect odbc with sql data base
+
+	goto 
+		control panel
+		administrative tools
+		system dsn
+		add
+		select database type(*.mdb,*.accdb)
+		provide database name
+		select database location
+		click ok
+		ok
+		finish

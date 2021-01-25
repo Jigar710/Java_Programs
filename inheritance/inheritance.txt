@@ -1,0 +1,86 @@
+INHERITANCE : IS-A
+	derive a class from an existing class
+
+	existing class / parent class / super class
+	derived class / child class / sub class
+	
+(1)
+	single :
+		derive a single class from single existing class
+		
+	Ex:
+		class A
+		{}
+		class B extends A
+		{}
+(2)
+	multilevel :
+		derive a class from derived class
+		
+	Ex:
+		class A
+		{}
+		class B extends A
+		{}
+		class C extends B
+		{}
+		
+(3)
+	Hierarchical :
+		derive multiple class from a single base class
+		
+	Ex:
+		class A
+		{}
+		class B extends A
+		{}
+		class C extends A
+		{}
+(4)
+	Hybrid :
+		combination of more than one type of inheritance
+		
+	Ex: single + Hierarchical
+		class A
+		{}
+		class B extends A
+		{}
+		class C extends B
+		{}
+		class D extends B
+		{}
+		
+		
+visibility mode
+
+private
+default
+protected
+public
+
+same package
+			access member			inherit
+			outside class
+
+private			NO					   NO
+default			YES					   YES
+protected		YES					   YES
+public			YES					   YES
+------------------------------------------------------------------------------------------------
+diff package
+			access member			inherit
+			outside class
+
+private			NO					   NO
+default			NO					   NO
+protected		NO					   YES
+public			YES					   YES
+------------------------------------------------------------------------------------------------
+super keyword
+	use to access parent class members in a child class only
+------------------------------------------------------------------------------------------------
+method overriding : 
+	same method prototype in both super and sub class
+	to access overridden method in child class 
+		super keyword is used.
+------------------------------------------------------------------------------------------------
